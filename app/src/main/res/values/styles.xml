@@ -1,0 +1,304 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="actionBarTheme">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+    </style>
+
+    <!--Heading Text-->
+    <style name="AppTheme.HeadingText" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/material_text_headline</item>
+    </style>
+
+    <!--Sub Heading Text-->
+    <style name="AppTheme.SubHeadingText" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/material_text_title</item>
+    </style>
+
+    <!--Constant TextView Title-->
+    <style name="AppTheme.TextViewTitle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/material_text_body1</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--Constant TextView Title-->
+    <style name="AppTheme.TextViewTitlePrimary" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:textSize">@dimen/material_text_body1</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--Outlined Floating Labelled TextInputLayout-->
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/material_text_body1</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="shapeAppearance">@dimen/material_dimen_ldpi</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+    </style>
+
+    <!--Hint for TextInputLayout-->
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/material_text_caption</item>
+    </style>
+
+    <!--Error for TextInputLayout-->
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/material_text_caption</item>
+    </style>
+
+    <!--Constant Transparent Button-->
+    <style name="AppTheme.Button.Transparent" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <!--Constant Light Action Button-->
+    <style name="AppTheme.Button.Light" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/material_dimen_ldpi</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <!--        <item name="cornerRadius">@dimen/md_component_button_text_left_and_right_padding</item>-->
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Light.Blue" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">normal</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:startColor">@android:color/white</item>
+        <item name="android:endColor">@android:color/white</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="cornerRadius">@dimen/material_dimen_mdpi</item>
+        <item name="strokeColor">@color/colorPrimaryDark</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!--Constant Light Action Button-->
+    <style name="AppTheme.Button.Icon" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/colorPrimaryDark</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="cornerRadius">@dimen/material_dimen_mdpi</item>
+        <item name="strokeColor">@android:color/white</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!--Constant Dark Action Button-->
+    <style name="AppTheme.Button.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/material_dimen_ldpi</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.Button.Dark.Opacity" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="cornerRadius">@dimen/material_dimen_mdpi</item>
+    </style>
+
+    <style name="AppTheme.Button.Gray" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/material_dimen_ldpi</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="backgroundTint">@color/buttonAddVendorDetailsColor</item>
+        <item name="android:colorBackground">@color/buttonAddVendorDetailsColor</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <!--Constant Tab Layout-->
+    <style name="AppTheme.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textAllCaps">false</item>
+        <item name="tabTextColor">@color/colorPrimary</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabMode">fixed</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <!--Constant Bottom Navigation-->
+    <style name="AppTheme.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="elevation">@dimen/material_dimen_small_ldpi</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_colors</item>
+        <item name="itemTextColor">@drawable/bottom_navigation_colors</item>
+    </style>
+
+    <!--Constant CardView-->
+    <style name="AppTheme.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">@dimen/material_dimen_mdpi</item>
+        <!--<item name="android:layout_marginStart">@dimen/material_dimen_mdpi</item>
+        <item name="android:layout_marginLeft">@dimen/material_dimen_mdpi</item>
+        <item name="android:layout_marginEnd">@dimen/material_dimen_mdpi</item>
+        <item name="android:layout_marginTop">@dimen/material_dimen_ldpi</item>-->
+        <item name="android:layout_marginBottom">@dimen/material_dimen_ldpi
+        </item>
+        <!--<item name="android:layout_marginRight">@dimen/material_dimen_mdpi</item>-->
+    </style>
+
+    <style name="AppTheme.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:layout_margin">@dimen/material_dimen_mdpi</item>
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="fabSize">auto</item>
+    </style>
+
+    <style name="AppTheme.FloatingActionButton.Mini" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:src">@drawable/ic_launcher_background</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="fabSize">mini</item>
+    </style>
+
+    <!--Shape Appearances for Cut Corners-->
+    <style name="ShapeAppearance.Cut.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Cut.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Cut.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!--Shape Appearances for Rounded Corners-->
+    <style name="ShapeAppearance.Rounded.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Rounded.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Rounded.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="imageViewStyleForAmenities" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerRadius">@dimen/material_dimen_mdpi</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Rounded.MyApp.MediumComponent</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="HideKeyboard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:inputType">none</item>
+    </style>
+
+    <style name="AppTheme.Chip" parent="@style/Widget.MaterialComponents.Chip.Action">
+        <item name="backgroundColor">@android:color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipIconSize">16dp</item>
+        <item name="color">@android:color/white</item>
+        <item name="strokeWidth">8dp</item>
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="chipStrokeColor">@color/colorAccent</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Rounded.MyApp.LargeComponent</item>
+    </style>
+
+    <style name="chipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/dialogButtonText</item>
+    </style>
+
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonBarPositiveButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:positiveButtonText">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Spinner" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/material_text_body1</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="shapeAppearance">@dimen/material_dimen_ldpi</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="background">@drawable/spinner_bg</item>
+    </style>
+
+    <style name="CustomDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="progressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+</resources>

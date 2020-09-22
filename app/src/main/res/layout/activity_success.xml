@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/constraintLayoutSuccess"
+    tools:context=".activities.SuccessActivity">
+
+    <TextView
+        android:id="@+id/textViewSuccessWelcomeUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome User"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineSuccessEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineSuccessStart"
+        app:layout_constraintTop_toBottomOf="@id/guidelineSuccessTop" />
+
+    <TextView
+        android:id="@+id/textViewSuccessCurrentLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/material_dimen_small_ldpi"
+        android:padding="@dimen/material_dimen_ldpi"
+        android:text="Your Current Location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/guidelineSuccessEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineSuccessStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewSuccessWelcomeUser" />
+
+    <TextView
+        android:id="@+id/textViewSuccessViewAllRegisteredUsersListTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:padding="@dimen/material_dimen_ldpi"
+        android:text="Registered Users : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineSuccessEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineSuccessStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewSuccessCurrentLocation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSuccessAllRegisteredUsers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/material_dimen_ldpi"
+        app:layout_constraintBottom_toTopOf="@id/buttonSuccessSignOut"
+        app:layout_constraintEnd_toStartOf="@id/guidelineSuccessEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineSuccessStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewSuccessViewAllRegisteredUsersListTitle" />
+
+    <Button
+        android:id="@+id/buttonSuccessSignOut"
+        style="@style/AppTheme.Button.Dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toTopOf="@id/guidelineSuccessBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineSuccessEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineSuccessStart"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewSuccessAllRegisteredUsers"
+        app:layout_constraintVertical_bias="0"
+        app:shapeAppearance="@style/ShapeAppearance.Rounded.MyApp.LargeComponent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSuccessStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSuccessEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSuccessTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSuccessBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

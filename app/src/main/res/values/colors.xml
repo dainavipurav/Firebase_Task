@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#f3f3f3</color>
+    <color name="colorAccent">#2e3192</color>
+    <color name="colorBottomNavigationItemColor">#c8c8c6</color>
+
+    <color name="secondOpinionCategoryTextColor">#868485</color>
+
+    <color name="colorSignUp">#f8aeb0</color>
+
+    <color name="hintTextColor">#d0d0d0</color>
+
+    <color name="walletCardColor">#007e3d</color>
+
+    <color name="colorResendOTP">#f15157</color>
+
+    <color name="healthInfoListTitleColor">#343131</color>
+
+
+    <color name="buttonAddVendorDetailsColor">#2e3192</color>
+
+    <color name="dialogButtonText">#2e3192</color>
+</resources>

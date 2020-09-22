@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayoutRegister"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    tools:context=".activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewRegisterTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintBottom_toTopOf="@id/textInputLayoutRegisterEmail"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRegisterEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineRegisterStart"
+        app:layout_constraintTop_toBottomOf="@id/guidelineRegisterTop" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutRegisterEmail"
+        style="@style/AppTheme.TextInputLayout"
+        android:layout_width="0dp"
+        android:hint="Email"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        app:layout_constraintBottom_toTopOf="@id/textInputLayoutRegisterPassword"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRegisterEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineRegisterStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewRegisterTitle"
+        app:shapeAppearance="@style/ShapeAppearance.Rounded.MyApp.LargeComponent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutRegisterPassword"
+        style="@style/AppTheme.TextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:hint="Password"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRegisterEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineRegisterStart"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutRegisterEmail"
+        app:layout_constraintVertical_bias="0"
+        app:shapeAppearance="@style/ShapeAppearance.Rounded.MyApp.LargeComponent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        style="@style/AppTheme.Button.Dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@id/guidelineRegisterBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRegisterEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineRegisterStart"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutRegisterPassword"
+        app:layout_constraintVertical_bias="0"
+        app:shapeAppearance="@style/ShapeAppearance.Rounded.MyApp.LargeComponent" />
+
+
+    <TextView
+        android:id="@+id/textViewAlreadyRegisteredLoginMe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_dimen_mdpi"
+        android:gravity="center"
+        android:text="Already registered? Login me."
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRegisterEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineRegisterStart"
+        app:layout_constraintTop_toBottomOf="@id/buttonRegister" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRegisterStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRegisterEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRegisterTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRegisterBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
